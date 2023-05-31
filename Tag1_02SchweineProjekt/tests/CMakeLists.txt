@@ -16,7 +16,7 @@ set_target_properties(gmock_main gtest_main PROPERTIES EXCLUDE_FROM_ALL 1 EXCLUD
 set(SOURCE
 	main.cpp
 	"../source/Schwein.cpp"
-        )
+		StapelTest.cpp StapelTest.h MockDependency.h MyServiceUsingDependencyTest.cpp MyServiceUsingDependencyTest.h)
 
 
 
