@@ -34,4 +34,16 @@ namespace collections {
 
         EXPECT_THROW(objectUnderTest.push(1), StapelException);
     }
+
+    TEST_F(StapelTest, push__overflow__throwsStapelException__variante) {
+        // Arrange
+        try {
+            fillup_to_limit_without_exception();
+
+            objectUnderTest.push(1);
+            FAIL() << "Fehler: StapelException erwartet";
+        } catch(const StapelException & ex) {
+            EXPECT_STREQ("Overflow", ex.what());
+        }
+    }
 }
