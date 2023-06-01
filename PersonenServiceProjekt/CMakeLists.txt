@@ -13,7 +13,7 @@ set(PROJ_CONFIG $<CONFIG>)
 add_executable(
 	PersonenServiceProjekt 
 	source/main.cpp
-        source/services/personen_service_exception.h source/services/personen_service_impl.cpp source/services/personen_service_impl.h)
+        source/services/personen_service_exception.h source/services/personen_service_impl.cpp source/services/personen_service_impl.h source/services/BlacklistService.h)
 
 
 # Add tests

@@ -8,6 +8,7 @@
 
 
 #include "Mockpersonen_repository.h"
+#include "MockBlacklistService.h"
 #include "../source/services/personen_service_impl.h"
 #include "../source/services/personen_service_exception.h"
 
@@ -16,11 +17,11 @@ using namespace testing;
 class personen_service_impl_test: public Test {
 
 protected:
-    Mockpersonen_repository repoMock;
+    NaggyMock<Mockpersonen_repository> repoMock; // Naggy = Default
+    NiceMock<MockBlacklistService> blacklistServiceMock;
+    personen_service_impl object_under_test{repoMock, blacklistServiceMock};
 
-    personen_service_impl object_under_test{repoMock};
-
-
+    void SetUp() override;
 };
 
 

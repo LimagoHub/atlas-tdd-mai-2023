@@ -4,7 +4,7 @@
 
 #include "personen_service_impl_test.h"
 #include <stdexcept>
-
+#include <stdexcept>
 TEST_F(personen_service_impl_test, speichern__vorname_tooShort__throws_personen_service_exception) {
     try {
         person invalidPerson{"j", "doe"};
@@ -23,4 +23,61 @@ TEST_F(personen_service_impl_test, speichern__nachname_tooShort__throws_personen
     } catch (personen_service_exception &ex) {
         EXPECT_STREQ(ex.what(), "Nachname zu kurz");
     }
+}
+
+TEST_F(personen_service_impl_test, speichern__unerwuenschtePerson__throws_personen_service_exception) {
+    try {
+        EXPECT_CALL(blacklistServiceMock, is_blacklisted(_)).Times(1).WillOnce(Return(true));
+        person unerwuenschtePerson{"John", "Doe"};
+        object_under_test.speichern(unerwuenschtePerson);
+        FAIL() << "Exception erwartet";
+    } catch (personen_service_exception &ex) {
+        EXPECT_STREQ(ex.what(), "Unerwuenschte Person");
+    }
+}
+
+TEST_F(personen_service_impl_test, speichern__unexpected_exception_in_underlying_service__throws_personen_service_exception) {
+    try {
+        person validPerson{"John", "Doe"};
+        //EXPECT_CALL(blacklistServiceMock, is_blacklisted(_)).Times(1).WillOnce(Return(false));
+
+        EXPECT_CALL(repoMock, save_or_update(_)).WillOnce(Throw(std::out_of_range{"Upps"}));
+
+        object_under_test.speichern(validPerson);
+        FAIL() << "Exception erwartet";
+    } catch (personen_service_exception &ex) {
+        EXPECT_STREQ(ex.what(), "Unexpected Exception in underlying Service");
+
+    }
+}
+
+TEST_F(personen_service_impl_test, speichern__happy_day__parameter_passed_to_repo) {
+
+        InSequence s1;
+        person validPerson{"John", "Doe"};
+
+        EXPECT_CALL(blacklistServiceMock, is_blacklisted(validPerson)).WillOnce(Return(false));
+        EXPECT_CALL(repoMock, save_or_update(validPerson)).Times(1);
+
+        object_under_test.speichern(validPerson);
+
+}
+
+TEST_F(personen_service_impl_test, speichern_overloaded__happy_day__parameter_passed_to_repo) {
+
+    person captured_person{"",""};
+
+    EXPECT_CALL(blacklistServiceMock, is_blacklisted(_)).WillOnce(Return(false));
+    EXPECT_CALL(repoMock, save_or_update(_)).WillOnce(DoAll(SaveArg<0>(&captured_person)));
+
+    object_under_test.speichern("Max", "Doe");
+
+    EXPECT_THAT( captured_person.getVorname(), AnyOf(StartsWith("J"), StartsWith("M")));
+    EXPECT_THAT(captured_person.getNachname(), "Doe");
+    EXPECT_THAT(captured_person.getId(), IsEmpty());
+;
+}
+
+void personen_service_impl_test::SetUp() {
+    ON_CALL(blacklistServiceMock, is_blacklisted(_)).WillByDefault(Return(false));
 }

@@ -15,7 +15,7 @@ set_target_properties(gmock_main gtest_main PROPERTIES EXCLUDE_FROM_ALL 1 EXCLUD
 
 set(SOURCE
 	main.cpp
-		personen_service_impl_test.cpp personen_service_impl_test.h)
+		personen_service_impl_test.cpp personen_service_impl_test.h MockBlacklistService.h)
 
 
 
