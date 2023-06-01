@@ -6,7 +6,7 @@
 
 TEST_F(MyServiceUsingDependencyTest, footest){
 
-    EXPECT_CALL(dependencyMock, foo("HALLO"));
+    EXPECT_CALL(dependencyMock, foo("HALLO")).Times(1);
 
     objectUnderTest.f("hallo");
 
@@ -27,7 +27,7 @@ TEST_F(MyServiceUsingDependencyTest, footest){
 
 TEST_F(MyServiceUsingDependencyTest, bartest){
 
-    EXPECT_CALL(dependencyMock, bar()).WillOnce(Return(10));
+    EXPECT_CALL(dependencyMock, bar()).Times(1).WillOnce(Return(10));
 
     auto result = objectUnderTest.g();
 
