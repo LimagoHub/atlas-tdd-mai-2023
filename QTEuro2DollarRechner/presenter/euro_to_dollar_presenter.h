@@ -15,7 +15,7 @@ public:
 
 	virtual void rechnen()  const = 0; // Presenter
 	virtual void beenden()  const = 0; // Presenter
-	virtual void populate_items()  const = 0;
+	virtual void populate_items()  const = 0; // Code behind
 	virtual void update_rechnen_action_state() const = 0; // Nicht beachten
 };
 

@@ -47,25 +47,20 @@ public:
 	void rechnen() const override
 	{
         try {
-            std::string euroValueAsString = view_->get_euro();
-            size_t endpos;
-            double euro = std::stod(euroValueAsString, &endpos);
-            if(euroValueAsString.length() != endpos) {
-                view_->set_dollar("Keine Zahl");
-                return;
-            }
-            double dollar = model_->convert(euro);
+            auto result = model_->convert(std::stod(view_->get_euro()));
             std::stringstream ss;
 
             ss << std::fixed;
             ss.precision(2);
-            ss << dollar;
+            ss << result;
             view_->set_dollar(ss.str());
-        } catch (const std::invalid_argument ex) {
+
+        } catch (const std::invalid_argument &ex) {
             view_->set_dollar("Keine Zahl");
-        } catch (...) {
+        } catch (const std::exception &ex) {
             view_->set_dollar("Ein Fehler ist aufgetreten");
         }
+
 
 	}
 
@@ -74,18 +69,17 @@ public:
         view_->dispose();
 	}
 
+    /*
+     * Eurowert als String lesen
+     * wenn gueltig rechnen aktivieren
+     * sonst deaktivieren
+     */
 	void update_rechnen_action_state() const override
 	{
         try {
-            std::string euroValueAsString = view_->get_euro();
-            size_t endpos;
-            std::stod(euroValueAsString, &endpos);
-            if(euroValueAsString.length() != endpos) {
-                view_->set_rechnen_enabled(false);
-                return;
-            }
+            std::stod(view_->get_euro());
             view_->set_rechnen_enabled(true);
-        } catch (const std::invalid_argument ex) {
+        } catch (const std::invalid_argument &ex) {
             view_->set_rechnen_enabled(false);
         }
 
