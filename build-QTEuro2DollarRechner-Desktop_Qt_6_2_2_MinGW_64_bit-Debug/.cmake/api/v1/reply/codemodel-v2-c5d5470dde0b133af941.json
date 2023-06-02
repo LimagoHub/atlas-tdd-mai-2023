@@ -1,0 +1,330 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "tests",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tests-Debug-70e4927a02b591d5c1f8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"build" : "tests/google",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tests.google-Debug-8630115b7a37cb04dbde.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "tests/google"
+				},
+				{
+					"build" : "tests/google/googlemock",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tests.google.googlemock-Debug-db98f2470e2e9b85c62e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "tests/google/googlemock",
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				},
+				{
+					"build" : "tests/google/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tests.google.googletest-Debug-c99243b9012b8ebe616d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 3,
+					"source" : "tests/google/googletest",
+					"targetIndexes" : 
+					[
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "Euro2Dollar",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 0
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "gmock",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "gtest",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Euro2Dollar::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Euro2Dollar-Debug-f54dc8c3cb4c962ce68b.json",
+					"name" : "Euro2Dollar",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Euro2DollarTest::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Euro2DollarTest-Debug-3612bc44e6144ef4f1db.json",
+					"name" : "Euro2DollarTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Euro2DollarTest_autogen::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Euro2DollarTest_autogen-Debug-e2ff4fa64d0bb8df1e5f.json",
+					"name" : "Euro2DollarTest_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Euro2DollarTest_autogen_timestamp_deps::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Euro2DollarTest_autogen_timestamp_deps-Debug-85c0d951dfc1ab300a7d.json",
+					"name" : "Euro2DollarTest_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Euro2Dollar_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Euro2Dollar_autogen-Debug-f14f7594ef26eb774038.json",
+					"name" : "Euro2Dollar_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Euro2Dollar_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Euro2Dollar_autogen_timestamp_deps-Debug-5bb1f7ed1410a8460596.json",
+					"name" : "Euro2Dollar_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gmock::@71511ec9755e569acd64",
+					"jsonFile" : "target-gmock-Debug-ba8e131580e7db13fd96.json",
+					"name" : "gmock",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gmock_autogen::@71511ec9755e569acd64",
+					"jsonFile" : "target-gmock_autogen-Debug-0a03e6922712dc40b7d0.json",
+					"name" : "gmock_autogen",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gmock_autogen_timestamp_deps::@71511ec9755e569acd64",
+					"jsonFile" : "target-gmock_autogen_timestamp_deps-Debug-5151e087c11580e789fc.json",
+					"name" : "gmock_autogen_timestamp_deps",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gmock_main::@71511ec9755e569acd64",
+					"jsonFile" : "target-gmock_main-Debug-13ed54dad3d7b1236c3d.json",
+					"name" : "gmock_main",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gmock_main_autogen::@71511ec9755e569acd64",
+					"jsonFile" : "target-gmock_main_autogen-Debug-1d2df1a65e7bdd4c2a2f.json",
+					"name" : "gmock_main_autogen",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gmock_main_autogen_timestamp_deps::@71511ec9755e569acd64",
+					"jsonFile" : "target-gmock_main_autogen_timestamp_deps-Debug-2163acad106a2cd49a17.json",
+					"name" : "gmock_main_autogen_timestamp_deps",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gtest::@80bf43194dc2f566920c",
+					"jsonFile" : "target-gtest-Debug-e550e3d542ff1c79b69f.json",
+					"name" : "gtest",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gtest_autogen::@80bf43194dc2f566920c",
+					"jsonFile" : "target-gtest_autogen-Debug-d032325084b6402f11d6.json",
+					"name" : "gtest_autogen",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gtest_autogen_timestamp_deps::@80bf43194dc2f566920c",
+					"jsonFile" : "target-gtest_autogen_timestamp_deps-Debug-45d9ac2f6ae9b456b5a0.json",
+					"name" : "gtest_autogen_timestamp_deps",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gtest_main::@80bf43194dc2f566920c",
+					"jsonFile" : "target-gtest_main-Debug-a7a0b7bcfb66b023a532.json",
+					"name" : "gtest_main",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gtest_main_autogen::@80bf43194dc2f566920c",
+					"jsonFile" : "target-gtest_main_autogen-Debug-35c80b5674e70377d09c.json",
+					"name" : "gtest_main_autogen",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gtest_main_autogen_timestamp_deps::@80bf43194dc2f566920c",
+					"jsonFile" : "target-gtest_main_autogen_timestamp_deps-Debug-5503ebb492b670cea54e.json",
+					"name" : "gtest_main_autogen_timestamp_deps",
+					"projectIndex" : 3
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/build-QTEuro2DollarRechner-Desktop_Qt_6_2_2_MinGW_64_bit-Debug",
+		"source" : "C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

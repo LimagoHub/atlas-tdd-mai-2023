@@ -1,0 +1,71 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "gtest::@80bf43194dc2f566920c"
+		},
+		{
+			"id" : "gmock::@71511ec9755e569acd64"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Tests"
+	},
+	"id" : "Euro2DollarTest_autogen_timestamp_deps::@a44f0ac069e85531cdee",
+	"isGeneratorProvided" : true,
+	"name" : "Euro2DollarTest_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "tests",
+		"source" : "tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/build-QTEuro2DollarRechner-Desktop_Qt_6_2_2_MinGW_64_bit-Debug/tests/CMakeFiles/Euro2DollarTest_autogen_timestamp_deps",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/build-QTEuro2DollarRechner-Desktop_Qt_6_2_2_MinGW_64_bit-Debug/tests/CMakeFiles/Euro2DollarTest_autogen_timestamp_deps.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

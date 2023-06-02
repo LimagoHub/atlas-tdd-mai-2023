@@ -1,0 +1,16 @@
+gtest_autogen/timestamp: \
+	C:/Applications/Qt/Tools/CMake_64/share/cmake-3.21/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in \
+	C:/Applications/Qt/Tools/CMake_64/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake \
+	C:/Applications/Qt/Tools/CMake_64/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake \
+	C:/Applications/Qt/Tools/CMake_64/share/cmake-3.21/Modules/FindPackageMessage.cmake \
+	C:/Applications/Qt/Tools/CMake_64/share/cmake-3.21/Modules/FindPython.cmake \
+	C:/Applications/Qt/Tools/CMake_64/share/cmake-3.21/Modules/FindPython/Support.cmake \
+	C:/Applications/Qt/Tools/CMake_64/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake \
+	C:/Applications/Qt/Tools/QtCreator/share/qtcreator/package-manager/auto-setup.cmake \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/google/googletest/CMakeLists.txt \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/google/googletest/cmake/Config.cmake.in \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/google/googletest/cmake/gtest.pc.in \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/google/googletest/cmake/gtest_main.pc.in \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/google/googletest/cmake/internal_utils.cmake \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/google/googletest/src/gtest-all.cc \
+	C:/Applications/Qt/Tools/CMake_64/bin/cmake.exe

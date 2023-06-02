@@ -1,0 +1,11 @@
+Euro2DollarTest_autogen/timestamp: \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/CMakeLists.txt \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/Mockeuro_to_dollar_calculator.h \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/Mockeuro_to_dollar_view.h \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/Mockexchange_rate_service.h \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/main.cpp \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/presenter/euro_to_dollar_presenter_impl_test.cpp \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/presenter/euro_to_dollar_presenter_impl_test.h \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/services/euro_to_dollar_impl_test.cpp \
+	C:/Users/JoachimWagner/git/Atlas/atlas-tdd-mai-2023/QTEuro2DollarRechner/tests/services/euro_to_dollar_impl_test.h \
+	C:/Applications/Qt/Tools/CMake_64/bin/cmake.exe
