@@ -15,6 +15,20 @@ protected:
 
 };
 
+class computer_player_parameter_test : public computer_player_test, public WithParamInterface<std::pair<int, int>> {
+
+protected:
+    int param;
+    int result;
+
+    void SetUp() override{
+
+        std::tie<int, int>(param, result) = GetParam();
+
+    }
+
+};
+
 
 
 
